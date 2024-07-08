@@ -1,0 +1,1117 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background:#000000;
+    border-radius: 10px;
+}
+
+body {
+    margin: 0;
+}
+
+.topHeader {
+    background-color: #045d5d;
+    /* position: fixed; */
+}
+
+.dropdown-menu {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.navBar-bgColor {
+    background-color: #017e7e;
+}
+
+.navBar-bgColor a {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.navBar-bgColor a:hover {
+    color: orange;
+}
+
+.floatingMenu{
+    padding: 0;
+}
+.floatingMenu .dropBtn{
+    background-image: linear-gradient(90deg,#017e7e 80%,#0c6161);
+    color: #fff;
+    padding: 10px 0 10px 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    min-width: 130px;
+    height: 55px;
+    box-shadow: 0 10px 10px -10px #333;
+    border-top-left-radius: 38px;
+    border-bottom-left-radius: 38px;
+    position: relative;
+    z-index: 2;
+}
+.floatingMenu .filterBlock{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    text-align: left;
+    top: -3px;
+}
+.floatingMenu .filterBlock .iconSpan{
+    position: relative;
+    left: 4px;
+}
+.floatingMenu .filterBlock .supportBtn{
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: .7px;
+    min-width: 100px;
+    padding-left: 15px;
+}
+.floatingMenu .filterBlock span{
+    display: block;
+}
+.floatingMenu .dropdown{
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    top: 227px;
+    z-index: 99;
+    right: 0;
+}
+.floatingMenu .dropdownContent{
+    position: absolute;
+    background-color: #f0fdfd;
+    min-width: 200px;
+    overflow: auto;
+    z-index: 1;
+    border-radius: 19px;
+    box-shadow: 0 0 5px 2px rgba(42,37,73,.18);
+    font-size: 12px;
+    top: 60px;
+    right: 10px;
+    transition: all .5s ease;
+    width: inherit;
+}
+.floatingMenu .dropdownContent li{
+    border-bottom: 1px solid #ececec;
+    padding: 6px 16px;
+    width: inherit;
+    float: inherit;
+    height: inherit;
+}
+.floatingMenu .dropdownContent p{
+    color: #0c6161;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+.floatingMenu .dropdownContent a{
+    color: #000;
+    text-decoration: none;
+}
+.floatingMenu .dropdownContent a:hover{
+    text-decoration: underline;
+}
+
+.banner {
+    background-image: url(https://www.cowin.gov.in/precaution_banner_bg_web.c656a76b28237d8fb924.png);
+}
+
+.bannerText {
+    padding-left: 5%;
+    font: 400 16px/28px 'Roboto', 'Helvetica Neue', sans-serif;
+    letter-spacing: normal;
+}
+
+.bannerText1 h3 {
+    font-size: 35px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    line-height: 53px;
+    color: #000;
+    font-family: 'Roboto Condensed', sans-serif !important;
+}
+
+.bannerText2 {
+    border: 3px solid #fd5428;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    margin: 10px 0 40px;
+    padding: 12px 25px;
+    text-transform: uppercase;
+}
+
+.bannerText2 img {
+    width: 35px;
+    margin-right: 15px;
+}
+
+.bannerText2 h3 {
+    color: #fd5428;
+    margin: 0;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Roboto Condensed', sans-serif !important;
+    line-height: 53px;
+    padding-right: 10%;
+}
+
+.bannerText h4 {
+    font-weight: 600;
+    margin-bottom: 15px;
+    line-height: 30px;
+    font-size: 23px;
+}
+
+.bannerImg img {
+    max-height: 490px;
+    max-width: 75%;
+    margin: 0 auto 0 20px;
+}
+
+.vaccinationStatus {
+    background: linear-gradient(120deg, #007c7c 50%, #04c4c4 0);
+    ;
+}
+
+.totalVaccinations {
+    font: 400 16px/28px 'Roboto', 'Helvetica Neue', sans-serif;
+    letter-spacing: normal;
+    text-align: right;
+    color: #ffffff;
+}
+
+.totalVaccinations h3 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.totalVaccinations p {
+    font-size: 17px;
+    margin: 0;
+    font-weight: 600;
+}
+
+.viewMoreBtn {
+    background-color: #fcbf02 !important;
+    border-radius: 25px !important;
+    padding: 0.55rem 2.55rem !important;
+    color: #4d3b03 !important;
+    font-weight: 700 !important;
+    margin-top: 10px !important;
+    text-transform: uppercase !important;
+    font-size: 13px !important;
+    border: 2px solid #fff !important;
+}
+
+.vaccinationsToday {
+    font: 400 16px/28px 'Roboto', 'Helvetica Neue', sans-serif;
+    letter-spacing: normal;
+    text-align: left;
+}
+
+.vaccinationsToday h3 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.vaccinationsToday p {
+    font-size: 17px;
+    margin: 0;
+    font-weight: 600;
+}
+
+.vaccinationSteps {
+    background-color: #edffff;
+    font: 400 16px/28px 'Roboto', 'Helvetica Neue', sans-serif;
+}
+
+.vaccinationSteps h1 {
+    font-size: 33px;
+    font-weight: 700;
+    color: #007c7c;
+    margin-bottom: 10px !important;
+}
+
+.vaccinationStepsContent {
+    /* margin-left: 13%; */
+    align-items: center;
+}
+
+.stepCard {
+    height: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 10px 30px #b5d8e2;
+}
+
+.stepContent {
+    height: 43% !important;
+    background-color: #007c7c;
+}
+
+.stepContent p {
+    font-size: 15px;
+    padding: 30px 25px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 0;
+}
+
+.stepFooter {
+    color: #2f4b6e;
+    font-size: 12px;
+    padding: 10px 45px 0px;
+    text-decoration: none;
+    margin: 0;
+    line-height: 20px;
+}
+
+.stepBox {
+    font-size: 14px;
+    color: #007c7c;
+    border: 1px solid #007c7c;
+    padding: 5px 20px;
+    border-radius: 10px;
+    top: 15px;
+    position: relative;
+    font-weight: 700;
+    background-color: #fff;
+    margin: auto;
+    display: block;
+    width: 85px;
+    text-align: center;
+    left: 0 !important;
+    right: 0;
+    line-height: 18px;
+}
+
+.icon {
+    font-family: icomoon !important;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+.iconRight {
+    color: #02aeae;
+    font-weight: 900;
+    font-size: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 120px;
+}
+
+.iconRight::before {
+    content: ">";
+}
+
+.nearestCenterSection {
+    background-color: #ffffff;
+}
+
+.nearestCenterSection h1 {
+    font-size: 32px;
+    color: #007c7c;
+    line-height: 40px;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    margin: 0 0 16px;
+}
+
+.nearestCenterSection p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #5a5a75;
+    margin-bottom: 15px;
+    margin: 0 0 12px;
+}
+
+.nearestCenterSection a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #02aeae;
+}
+
+.nearestVaccination {
+    background-color: #ffffff;
+    margin: 0 190px;
+    border-bottom: 2px solid rgba(0, 0, 0, .12);
+
+}
+
+.nearestVaccination a {
+    font-size: 25px;
+    color: #007c7c !important;
+    font-weight: 700;
+}
+
+.pullLeft {
+    float: left;
+    padding-right: 0;
+}
+
+.searchBox button {
+    border: 1px solid rgba(0, 0, 0, .12);
+    color: rgba(0, 0, 0, .12);
+    height: 45px !important;
+    font-size: 18px;
+}
+
+.nearVaccinationDropdown {
+    width: 100%;
+}
+
+.pullLeft {
+    float: left;
+    padding-right: 0;
+}
+
+.searchButton {
+    color: #fff !important;
+    border: 1px solid #007c7c !important;
+    background-color: #007c7c !important;
+    margin-top: 0;
+    height: 45px !important;
+    width: 120px;
+    padding: 8px 30px;
+    font-size: 18px;
+    text-transform: none !important;
+    border-radius: 50px !important;
+    margin-left: 15px;
+    font-weight: 400;
+}
+
+.searchBox a {
+    color: #000000 !important;
+}
+
+.freePrecaution {
+    background-color: #ffffff;
+}
+
+.freePrecaution h3 {
+    color: #007c7c;
+    font-weight: 700;
+    font-size: 32px;
+    letter-spacing: .1px;
+    line-height: 1.3;
+    margin: 0 0 16px;
+}
+
+.freePrecaution p {
+    font-size: 16px;
+    color: #0e1229;
+    font-weight: 400;
+    line-height: 1.5;
+    opacity: .7;
+    letter-spacing: .5px;
+    max-width: 70%;
+    margin: 0 0 12px;
+}
+
+.bookSlotBtn {
+    background: #007c7c !important;
+    border-radius: 25px !important;
+    padding: 0.75rem 2.95rem !important;
+    color: #fff !important;
+    font-size: 16px !important;
+    display: block !important;
+    width: fit-content !important;
+    text-decoration: none !important;
+}
+
+.reportSideEffects {
+    padding: 45px 0;
+    background-color: #edffff;
+}
+
+.reportSideEffects h3 {
+    color: #007c7c;
+    font-weight: 700;
+    font-size: 32px;
+    letter-spacing: .1px;
+    line-height: 1.3;
+    margin: 0 0 16px;
+}
+
+.reportSideEffects p {
+    font-size: 16px;
+    color: #0e1229;
+    font-weight: 400;
+    line-height: 1.5;
+    opacity: .7;
+    letter-spacing: .5px;
+    margin: 0 0 12px;
+}
+
+.childreVaccination {
+    padding: 45px 0;
+    background-color: #fff;
+}
+
+.childreVaccination h3 {
+    color: #007c7c;
+    font-weight: 700;
+    font-size: 31px;
+    letter-spacing: .1px;
+    line-height: 1.3;
+    margin: 0 0 16px;
+}
+
+.childreVaccination p {
+    font-size: 16px;
+    color: #0e1229;
+    font-weight: 400;
+    line-height: 1.5;
+    opacity: .7;
+    letter-spacing: .5px;
+    margin: 0 0 12px;
+}
+
+.childreVaccination ul {
+    padding-left: 5px;
+}
+
+.childreVaccination li {
+    list-style: none;
+    position: relative;
+    padding-left: 19px;
+}
+
+.childreVaccination li::before {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: #27c6c6;
+    border-radius: 50%;
+    left: 0;
+    margin-top: 7px;
+}
+
+.vaccinationDateCorrection {
+    padding: 45px 0;
+    background-color: #edffff;
+}
+
+.vaccinationDateCorrection h3 {
+    color: #007c7c;
+    font-weight: 700;
+    font-size: 32px;
+    letter-spacing: .1px;
+    line-height: 1.3;
+    margin: 0 0 16px;
+}
+
+.vaccinationDateCorrection p {
+    font-size: 16px;
+    color: #0e1229;
+    font-weight: 400;
+    line-height: 1.5;
+    opacity: .7;
+    letter-spacing: .5px;
+    margin: 0 0 12px;
+}
+
+.precautionDose {
+    padding: 45px 0;
+    background-color: #fff;
+}
+
+.precautionDose h3 {
+    color: #007c7c;
+    font-weight: 700;
+    font-size: 31px;
+    letter-spacing: .1px;
+    line-height: 1.3;
+    margin: 0 0 16px;
+}
+
+.precautionDose p {
+    font-size: 16px;
+    color: #0e1229;
+    font-weight: 400;
+    line-height: 1.5;
+    opacity: .7;
+    letter-spacing: .5px;
+    margin: 0 0 12px;
+}
+
+.precautionDose ul {
+    padding-left: 5px;
+}
+
+.precautionDose li {
+    list-style: none;
+    position: relative;
+    padding-left: 19px;
+}
+
+.precautionDose li::before {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: #27c6c6;
+    border-radius: 50%;
+    left: 0;
+    margin-top: 7px;
+}
+
+.whitspaceNowrap {
+    white-space: nowrap;
+}
+
+.shareVaccination {
+    padding: 45px 0;
+    background-color: #edffff;
+}
+
+.shareVaccination h3 {
+    font-size: 32px;
+    color: #007c7c;
+    line-height: 40px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    letter-spacing: .1px;
+    margin: 0 0 16px;
+}
+
+.shareVaccination p {
+    font-size: 16px;
+    color: #0e1229;
+    font-weight: 400;
+    line-height: 1.5;
+    opacity: .7;
+    letter-spacing: .5px;
+    margin: 0 0 12px;
+}
+
+.abha {
+    padding: 45px 0;
+    background-color: #fff;
+}
+
+.abha h1 {
+    font-size: 32px;
+    color: #007c7c;
+    line-height: 40px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    letter-spacing: .1px;
+    margin: 0 0 16px;
+}
+
+.abha p {
+    font-size: 16px;
+    color: #0e1229;
+    font-weight: 400;
+    line-height: 1.5;
+    opacity: .7;
+    letter-spacing: .5px;
+    margin: 0 0 12px;
+}
+
+.abha a {
+    background: #fff;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .25);
+    padding: 10px;
+    display: block;
+    border-radius: 8px;
+}
+
+.raiseAnIssue {
+    background-color: #007c7c;
+    padding: 45px 0 50px;
+}
+
+.raiseAnIssue h2 {
+    color: #fff;
+    font-size: 32px;
+    letter-spacing: normal;
+    margin: 0 0 16px;
+}
+
+.raiseAnIssue p {
+    color: #fff;
+    margin: 0 0 12px;
+}
+
+.carousselRaiseIssue .item {
+    height: 100% !important;
+    display: block !important;
+}
+
+.raiseAnIssueCard {
+    height: 100% !important;
+    width: 25%;
+    text-align: center;
+    background: #fff 0 0 no-repeat padding-box;
+    box-shadow: 0 8px 25px rgba(64, 48, 107, .25098039215686274);
+    border-radius: 10px;
+    padding: 20px 15px;
+    margin: 0 auto;
+}
+
+.raiseAnIssueCard a {
+    min-height: 40px;
+    font-weight: 700;
+    letter-spacing: 0;
+    color: #007c7c;
+    font-size: 14px;
+    display: block;
+}
+
+.raiseAnIssue p {
+    letter-spacing: 0;
+    color: #282828;
+    font-weight: 600;
+    font-size: 12px;
+    margin: 0 0 12px;
+}
+
+.carousselRaiseIssue .carousel-control-prev {
+    left: auto;
+    right: 70px;
+    width: auto;
+    bottom: auto;
+    top: -50px;
+    cursor: pointer;
+}
+
+.carousselRaiseIssue .carousel-control-next {
+    right: 20px;
+    width: auto;
+    bottom: auto;
+    top: -50px;
+    cursor: pointer;
+}
+
+.raiseAnIssueCard a {
+    text-decoration: none;
+}
+
+.faqSection {
+    background-color: #fff;
+    padding: 45px 0;
+}
+
+.faqSection h1 {
+    font-size: 32px;
+    color: #007c7c;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px !important;
+    margin: 0 0 16px;
+}
+
+.downloadFaqBtn a {
+    border: 2px solid #007c7c;
+    border-radius: 50px;
+    padding: 0.75rem 2.95rem;
+    min-width: 150px;
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #007c7c !important;
+}
+
+.downloadFaqBtn span {
+    display: inline-block;
+}
+
+.faqTabs {
+    margin-bottom: 30px;
+}
+
+.faqTabs .tabHeader {
+    background-color: #e9ffff;
+    border-radius: 27px 27px 0 0;
+    border-bottom: none;
+    margin-bottom: 30px;
+    display: flex;
+    /* overflow: hidden; */
+    position: relative;
+    flex-shrink: 0;
+}
+
+.tabLabel {
+    color: #007c7c !important;
+    font-weight: 700 !important;
+    padding: 8px 15px !important;
+    font-size: 16px !important;
+
+}
+
+.faqAccordion {
+    /* overflow: hidden; */
+    background: #f6f6f6 0 0 no-repeat padding-box !important;
+    border-radius: 10px;
+    margin-bottom: 0;
+    font-weight: 600;
+    color: #000000;
+}
+
+.faqAccordion li {
+    border: 0 !important;
+}
+
+.faqAccordion button {
+    background: #f6f6f6 0 0 no-repeat padding-box !important;
+    font-weight: 600;
+    color: #000000 !important;
+}
+
+.faqAccordion button:hover {
+    text-decoration: underline;
+}
+
+.tabDiv {
+    height: 289px;
+    overflow-y: auto;
+}
+
+.faqAccordion p {
+    padding-right: 10%;
+    margin: 0 0 12px;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.faqBody {
+    background: #f6f6f6 0 0 no-repeat padding-box !important;
+}
+
+.faqBody p {
+    margin: 0;
+}
+.whatsNewonCowin{
+    padding: 45px 0;
+    background: #edffff;
+}
+.whatsNewonCowin h2{
+    font-size: 32px;
+    color: #007c7c;
+    line-height: 40px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 30px!important;
+    letter-spacing: normal;
+    margin: 0 0 16px;
+}
+.height_container{
+    overflow: auto;
+    max-height: 300px;
+}
+.whatsNewonCowin .numbering{
+    position: relative;
+}
+.whatsNewonCowin .numbering img{
+    max-width: 60px;
+    max-height: 250px;
+}
+.numbering .listNo{
+    position: absolute;
+    color: #fff;
+    top: 30px;
+    left: 15px;
+    font-size: 20px;
+}
+
+.whatsNewonCowin .headerContent{
+    padding: 0 10px;
+    overflow: auto;
+    height: 70px;
+    margin: 15px 0px auto auto;
+    font-size: 16px;
+    line-height: 26px;
+    background-color: #f5f6f5;
+    top: 0;
+    color: #007c7c;
+}
+.whatsNewonCowin .accordion-button::after{
+    bottom: 2px;
+    position: absolute;
+    left: 190px;
+}
+.whatsNewAccordianBody{
+    padding: 0 24px 25px 10px;
+    padding-left: 70px!important;
+    color: #555;
+    background-color: #f5f6f5;
+
+}
+.whatsNewAccordianHeader{
+    padding: 0;
+    min-height: 120px;
+    background-color: #f5f6f5 !important;
+    font-weight: 500;
+    box-shadow: 0 8px 6px -6px #cfc7c7;
+    background: transparent;
+    border-radius: 0px !important;
+}
+.whatsNewAccordianHeader .headerTitle{
+    background-color: #f5f6f5;
+    font-weight: 600;
+}
+.whatsNewAccordianBody p{
+    line-height: 24px;
+    font-size: 14px;
+    margin: 0 0 12px;
+}
+.whatsNewonCowin img{
+    max-width: 100%;
+    max-height: 250px;
+}
+.vaccinationDrive{
+    padding: 45px 0;
+    background-color: #fff;
+}
+.vaccinationDrive h1{
+    font-size: 32px;
+    color: #007c7c;
+    line-height: 40px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 30px!important;
+    letter-spacing: normal;
+    margin: 0 0 16px;
+}
+.vaccinesText p{
+    color: #02aeae;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 5px;
+    margin: 0 0 12px;
+}
+.vaccinesText h2{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    background: #007c7c;
+    border-radius: 4px;
+    padding: 3px 10px;
+    letter-spacing: normal;
+    margin: 0 0 16px;
+}
+.vaccinesText h2 span{
+    font-size: 13px;
+    font-weight: 400;
+}
+.vaccinationDashboardBtn{
+    border: 2px solid !important;
+    border-radius: 50px !important;
+    padding: 10px 30px !important;
+    color: #2e9595 !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+}
+.partners{
+    background-color: #edffff;
+    padding: 45px 0 30px;
+}
+.partners h1{
+    color: #007c7c;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: normal;
+    margin: 0 0 16px;
+}
+.partnerCard{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1607843137254902);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    max-height: 63px;
+    min-height: 63px;
+}
+.partnerBtn{
+    margin-top: 60px;
+    text-align: center;
+}
+.partnerBtn a{
+    margin-right: 30px;
+}
+.partnerBtn .viewMore{
+    border: 2px solid #007c7c;
+    background-color: #007c7c;
+    border-radius: 50px;
+    padding: 0.75rem 3.95rem;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+}
+.partnerBtn .registerPartner{
+    border: 2px solid #007c7c;
+    background-color: initial;
+    border-radius: 50px;
+    padding: 0.75rem 1.8rem;
+    color: #007c7c;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.footerContainer{
+    background: #007c7c;
+    color: #fff;
+    position: relative;
+    padding: 30px 0 0;
+}
+.vaccinationServices h4{
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+    color: #99d9d9;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    letter-spacing: normal;
+    margin: 0 0 16px;
+}
+.vaccinationServices h4::after{
+    content: "";
+    display: block;
+    border-bottom: 5px solid #99d9d9;
+    width: 22px;
+    position: relative;
+    bottom: -4px;
+}
+.vaccinationServices ul{
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+.vaccinationServices ul li{
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+.vaccinationServices ul li a{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: none;
+    background-color: transparent;
+}
+.vaccinationServices ul li a:hover{
+    text-decoration: underline;
+}
+.helplineContacts ul{
+    border: solid #015158;
+    border-width: 1px 0 0;
+    list-style-type: none;
+    text-align: left;
+    padding: 15px 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.helplineContacts ul li{
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+.helplineContacts ul li h4{
+    font-weight: 600;
+    color: #99d9d9;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.helplineContacts ul li a{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: none;
+}
+.helplineContacts ul li a:hover{
+    text-decoration: underline;
+}
+.miniFooter{
+    background-color: #015158;
+    padding: 5px 0;
+    margin-top: 25px;
+}
+.miniFooter p{
+    margin: 0;
+    font-weight: 400;
+    font-size: 12px;
+}
+.miniFooter a{
+    color: #fff;
+    font-weight: 400;
+    font-size: 12px;
+    white-space: nowrap;
+    text-decoration: none;
+}
+.footerLogos{
+    padding: 0;
+    margin: 0;
+}
+.footerLogos li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 15px;
+}
+.footerLogos li img{
+    vertical-align: middle;
+    height: 40px!important;
+}
+.bottomFooterLinks1{
+    text-align: end;
+}
+.bottomFooterLinks1 a{
+    color: #fff;
+    font-weight: 400;
+    font-size: 12px;
+    white-space: nowrap;
+    text-decoration: none;
+}
+.bottomFooterLinks1 a:hover{
+    text-decoration: underline;
+}
+.bottomFooterLinks1::after{
+    content: "";
+    display: inline-block;
+    border-bottom-color: #007c7c;
+    border-right-width: 1px;
+    border-right-style: solid;
+    height: 14px;
+    position: relative;
+    vertical-align: middle;
+    right: -13px;
+}
+.bottomFooterLinks2 a:hover{
+    text-decoration: underline;
+}
